@@ -1,9 +1,9 @@
 function solution(s) {
-  let str = s;
-  const arry = [...str]; //["a","b","c","d","e"]
+  const str = s;
+  const arry = [...str];
 
   if (arry.length % 2 == 0) {
-    let i = arry.length / 2;
+    const i = arry.length / 2;
     return arry[i - 1] + arry[i];
   } else {
     let i = arry.length / 2;
