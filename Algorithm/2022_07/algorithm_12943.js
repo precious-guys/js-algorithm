@@ -1,13 +1,16 @@
-let num = 6;
-let answer = 6;
-let time = 0;
-for (time = 0; answer !== 1; time++) {
-  if (answer % 2 == 0) {
-    answer = answer / 2;
-    console.log(answer);
-  } else if (answer % 2 == 1) {
-    answer = answer * 3 + 1;
-    console.log(answer);
+function solution(num) {
+  let answer = 0;
+  for (answer = 0; num !== 1; answer++) {
+    if (answer == 500) {
+      answer = -1;
+      break;
+    } else if (num % 2 == 0) {
+      num = num / 2;
+    } else if (num % 2 == 1) {
+      num = num * 3 + 1;
+    } else if (num == 1) {
+      answer = 0;
+    }
   }
+  return answer;
 }
-console.log(time);

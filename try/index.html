@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div style="border: solid black">
+      <div style="border: solid black">
+        <h1 id="title">기형도 / 빈집</h1>
+        <h3 id="contents">
+          <p>사랑을 잃고 나는 쓰네</p>
+          <p></p>
+          <p>잘 있거라, 짧았던 밤들아</p>
+          <p>창밖을 떠돌던 겨울 안개들아</p>
+          <p>아무것도 모르던 촛불들아, 잘 있거라</p>
+          <p>공포를 기다리던 흰 종이들아</p>
+          <p>망설임을 대신하던 눈물들아</p>
+          <p>잘 있거라, 더 이상 내 것이 아닌 열망들아</p>
+          <p></p>
+          <p>장님처럼 나 이제 더듬거리며 문을 잠그네</p>
+          <p>가엾은 내 사랑 빈집에 갇혔네</p>
+        </h3>
+      </div>
+      <div class="titleOption">
+        <h2>제목설정</h2>
+        <div>
+          <b>색상 : </b><input id="titleSelect" type="color" /><button
+            id="titleColorChangeBtn"
+          >
+            변경
+          </button>
+        </div>
+        <p></p>
+        <div>
+          <b>스타일</b>
+          <button id="italicTitle">italic(기울임)</button>
+          <button id="fontWeightTitle">bold(굵게)</button>
+        </div>
+        <p></p>
+        <div>
+          <b>모양</b><input id="fontStyleInput" type="text" /><button
+            id="fontStyleBtn"
+          >
+            변경
+          </button>
+        </div>
+        <p></p>
+        <div>
+          <b>크기</b><input id="fontSizeInput" type="text" /><button
+            id="fontSizeBtn"
+          >
+            변경
+          </button>
+        </div>
+      </div>
+      <p></p>
+      <button id="resetBtn">초기화</button>
+      <hr />
+      <div class="contentOption">
+        <h2>내용설정</h2>
+        <div>
+          <b>색상 : </b><input id="contentColorSelect" type="color" /><button
+            id="changeTitleColorBtn"
+          >
+            변경
+          </button>
+        </div>
+        <p></p>
+
+        <div>
+          <b>스타일</b>
+          <button id="contentItalicBrn">italic(기울임)</button>
+          <button id="contentBold">bold(굵게)</button>
+        </div>
+        <p></p>
+        <div>
+          <b>모양</b><input id="contentFontStyleInput" type="text" /><button
+            id="contentFontStyleBtn"
+          >
+            변경
+          </button>
+        </div>
+        <p></p>
+        <div>
+          <b>크기</b><input id="contentFontSizeInput" type="text" /><button
+            id="contentFontSizeBtn"
+          >
+            변경
+          </button>
+        </div>
+        <p></p>
+        <button id="contentResetBtn">초기화</button>
+      </div>
+      <hr />
+
+      <div>
+        <center>
+          <p></p>
+          <h1>메모장</h1>
+          <textarea
+            placeholder="메모장 크기를 조절하고 입력하세요."
+            name=""
+            id="memo"
+            cols="50"
+            rows="20"
+          ></textarea>
+
+          <p></p>
+
+          <div>
+            <h2>내용설정</h2>
+            <div>
+              <b>색상 : </b><input id="memoColorInput" type="color" /><button
+                id="memoColorBtn"
+              >
+                변경
+              </button>
+            </div>
+            <p></p>
+
+            <div>
+              <b>스타일</b>
+              <button id="memoItalic">italic(기울임)</button>
+              <button id="memoBoldBtn">bold(굵게)</button>
+            </div>
+            <p></p>
+            <div>
+              <b>모양</b><input id="memoFontInput" type="text" /><button
+                id="memoFontBtn"
+              >
+                변경
+              </button>
+            </div>
+            <p></p>
+            <div>
+              <b>크기</b><input id="memoSizeInput" type="text" /><button
+                id="memoSizeBtn"
+              >
+                변경
+              </button>
+            </div>
+            <p></p>
+            <button id="memoResetBtn">초기화</button>
+            <p></p>
+          </div>
+        </center>
+      </div>
+
+      <script src="app.js"></script>
+    </div>
+    <p></p>
+  </body>
+</html>
