@@ -1,0 +1,17 @@
+const number = "1924";
+const k = 2;
+
+function solution(number, k) {
+  const arr = [];
+  for (let i = 0; i < number.length; i++) {
+    while (arr.length > 0 && arr[arr.length - 1] < number[i] && k > 0) {
+      k--;
+      arr.pop();
+    }
+    arr.push(number[i]);
+  }
+  arr.splice(number.length - k, k);
+  return arr.join("");
+}
+
+console.log(solution(number, k));
